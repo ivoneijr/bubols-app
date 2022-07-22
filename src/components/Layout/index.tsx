@@ -16,11 +16,11 @@ const links = [
     to: "/dashboard",
     icon: "template",
   },
-  {
-    label: "Questionário",
-    to: "/questions",
-    icon: "document",
-  },
+  // {
+  //   label: "Questionário",
+  //   to: "/questions",
+  //   icon: "document",
+  // },
   {
     label: "Cadastrar Aluno",
     to: "/users/new",

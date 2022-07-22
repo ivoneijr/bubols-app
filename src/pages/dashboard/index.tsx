@@ -8,8 +8,8 @@ export const Dashboard = () => {
     <PageContainer title="Dashboard">
       <div className="flex mb-10">
         <Card label="Alunos" number="120" icon="user" />
+        <Card label="Vencidos" number="4" icon="user" />
         <Card label="Avaliações" number="260" icon="clipboard" />
-        <Card label="Cidades" number="67" icon="location" />
       </div>
 
       <div className="bg-white p-4">
