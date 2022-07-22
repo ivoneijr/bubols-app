@@ -9,7 +9,7 @@ export const SideBar = tw.aside`
   dark:bg-dark-bg-primary
   transition-all duration-200
   min-h-screen
-  ${(props: SideBarProps) => (props.isOpen ? "w-96" : "w-10")}
+  ${(props: SideBarProps) => (props.isOpen ? "w-64" : "w-12")}
 `;
 
 export const Main = tw.main`

@@ -21,6 +21,10 @@ import {
   MoonIcon,
   UserIcon,
   LocationMarkerIcon,
+  TableIcon,
+  TemplateIcon,
+  DocumentTextIcon,
+  UserAddIcon,
 } from "@heroicons/react/outline";
 
 import { AdjustmentsIcon } from "@heroicons/react/solid";
@@ -33,6 +37,18 @@ interface Props {
 
 export const Icon: FC<Props> = ({ name, ...props }: Props) => {
   switch (name) {
+    case "user-add":
+      return <UserAddIcon {...props} />;
+
+    case "document":
+      return <DocumentTextIcon {...props} />;
+
+    case "template":
+      return <TemplateIcon {...props} />;
+
+    case "table":
+      return <TableIcon {...props} />;
+
     case "location":
       return <LocationMarkerIcon {...props} />;
 

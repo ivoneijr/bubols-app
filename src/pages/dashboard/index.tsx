@@ -1,4 +1,5 @@
 import { TextField } from "@mui/material";
+import { Link } from "react-router-dom";
 import { Card } from "../../components/Card";
 import { PageContainer } from "../../components/Pages";
 
@@ -14,7 +15,17 @@ export const Dashboard = () => {
       <div className="bg-white p-4">
         <h1 className="text-xl font-semibold mb-4">Alunos</h1>
 
-        <TextField fullWidth label="Nome" id="fullWidth" />
+        <div className="mt-8 flex space-between">
+          <div className="w-11/12">
+            <TextField fullWidth label="Nome" id="fullWidth" />
+          </div>
+
+          <div className="w-1/12 flex space-between ml-4">
+            <button className="bg-light-bg-primary p-2 text-white hover:opacity-75 w-full">
+              Buscar
+            </button>
+          </div>
+        </div>
 
         <div className="mt-8">
           <div className="ouverflow-auto mt-2 mb-12">
@@ -71,11 +82,16 @@ export const Dashboard = () => {
                   <td className="text-sm text-primary whitespace-nowrap overflow-hidden overflow-ellipsis py-3 px-4">
                     01/08/2022
                   </td>
-                  <td className="text-sm text-primary whitespace-nowrap overflow-hidden overflow-ellipsis py-3 px-4">
+                  <td className="text-sm text-primary whitespace-nowrap overflow-hidden overflow-ellipsis py-3 px-4  font-semibold">
                     01/08/2023
                   </td>
                   <td className="text-sm text-primary whitespace-nowrap overflow-hidden overflow-ellipsis py-3 px-4">
-                    Visualisar
+                    <Link
+                      to="/users/1"
+                      className="underline hover:text-dark-main-text"
+                    >
+                      Visualisar
+                    </Link>
                   </td>
                 </tr>
                 <tr className="hover:bg-slate-100">
@@ -100,11 +116,16 @@ export const Dashboard = () => {
                   <td className="text-sm text-primary whitespace-nowrap overflow-hidden overflow-ellipsis py-3 px-4">
                     01/08/2022
                   </td>
-                  <td className="text-sm text-primary whitespace-nowrap overflow-hidden overflow-ellipsis py-3 px-4">
-                    01/08/2024
+                  <td className="text-sm text-primary whitespace-nowrap overflow-hidden overflow-ellipsis py-3 px-4 text-dark-main-text font-semibold">
+                    01/08/2022
                   </td>
                   <td className="text-sm text-primary whitespace-nowrap overflow-hidden overflow-ellipsis py-3 px-4">
-                    Visualisar
+                    <Link
+                      to="/users/1"
+                      className="underline hover:text-dark-main-text"
+                    >
+                      Visualisar
+                    </Link>
                   </td>
                 </tr>
               </tbody>
